@@ -53,7 +53,7 @@ const Back = () => {
               <label className='text-[14px] text-lg'>Number of Positions</label><br />
               <div className='flex justify-between w-full h-[47px] border-2 rounded-[9px]'>
                 <input type='text' className='w-full' />
-                <div className='mt-2 text-2xl'>
+                <div className='mt-2 text-2xl px-2'>
                   <Dropdown className='text-[2xl] mt-2' />
                 </div>
               </div>
@@ -74,7 +74,7 @@ const Back = () => {
               <label className='text-[14px] text-lg'>Reporting Structure</label><br />
               <div className='flex justify-between w-full h-[47px] border-2 rounded-[9px]'>
                 <input type='text' className='w-full' />
-                <div className='mt-2 text-2xl'>
+                <div className='mt-2 text-2xl px-2'>
                   <Dropdown className='text-[2xl] mt-2' />
                 </div>
               </div>
@@ -82,7 +82,7 @@ const Back = () => {
           </div>
 
           {/* Final Form Fields */}
-          <div className='flex gap-3 px-4 pt-6 flex-wrap'>
+          <div className='flex gap-3 px-4 pt-8 flex-wrap'>
             <div className='w-full sm:w-[268px]'>
               <label className='text-[14px] text-lg'>Team Department</label><br />
               <input type='text' className='w-full h-[47px] border-2 rounded-[9px]' />
@@ -95,15 +95,15 @@ const Back = () => {
               <label className='text-[14px] text-lg'>Industry</label><br />
               <div className='flex justify-between w-full h-[47px] border-2 rounded-[9px]'>
                 <input type='text' className='w-full' />
-                <div className='mt-2 text-2xl'>
-                  <Dropdown className='text-[2xl] mt-2' />
+                <div className='mt-2 text-2xl px-2'>
+                  <Dropdown className='text-[2xl] mt-2 ' />
                 </div>
               </div>
             </div>
           </div>
 
           {/* Preview Button */}
-          <div className="mt-3 flex justify-end px-8 pt-6 pb-10">
+          <div className="mt-3 flex justify-end px-8 pt-8 pb-6">
             <button className="w-full sm:w-[143px] h-[47px] bg-[#007AFF] flex items-center justify-center rounded-[8px] text-white">
               Preview
             </button>
