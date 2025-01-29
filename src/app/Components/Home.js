@@ -15,13 +15,13 @@ import Userdefined from './Userdefined';
 
 const Home = () => {
   return (
-    <div className='container mx-auto px-2'>
+    <div className='container mx-auto px-2 pt-6'>
         <h1 className='text-[#007AFF] lg:text-[24px] text-[18px] font-bold'>Review Skill Portfolio for the Role of Business Analyst
 </h1>
-<p className='text-[16px] pt-2'>Review and refine the AI-extracted skills list to match your role’s needs.</p>
-<div className='flex justify-between pt-4 lg:flex-nowrap flex-wrap'>
+<p className='text-[16px] pt-1'>Review and refine the AI-extracted skills list to match your role’s needs.</p>
+<div className='flex justify-between pt-8 lg:flex-nowrap flex-wrap'>
     <div>
-        <p>Below is the list of skills extracted based on your job description. Refine
+        <p className='text-[16px]'>Below is the list of skills extracted based on your job description. Refine
          the list to ensure relevance to<br/> the role.</p>
     </div>
     {/* Right */}
@@ -32,12 +32,12 @@ const Home = () => {
     </div>
 
 {/* button */}
-<div className='bg-[#007AFF]  w-[197px] h-[38px] flex gap-3 lg:flex-nowrap flex-wrap rounded px-2 py-2'>
+<div className='bg-[#007AFF]  w-[197px] h-[38px] flex gap-1 lg:flex-nowrap flex-wrap rounded px-2 py-2'>
     <button className='text-white text-[13px]'>
       Assign Competency Level
      
     </button>
-    <div className='text-white mt-1'>
+    <div className='text-white mt-'>
     <Dropdown className="" />
 
     </div>
@@ -58,7 +58,7 @@ const Home = () => {
     </div>
 
 </div>
-<input type='text' placeholder='Search Skills' className='lg:w-[428px] h-[47px] border-2 rounded-[8px] px-4 '/>
+<input type='text' placeholder='Search Skills' className='lg:w-[428px] h-[47px] border-2 rounded-[8px] -mt-5 px-4 '/>
 {/* 2nd Requird Skll */}
 <div className='bg-[#F3F3F3] mt-6 rounded-[8px] px-7 pt-5 pb-20'>
     {/* Parent */}
