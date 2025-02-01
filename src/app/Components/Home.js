@@ -12,7 +12,6 @@ import Category from './Category';
 import Importance from './Importance';
 import Userdefined from './Userdefined';
 
-
 const Home = () => {
   return (
     <div className='container mx-auto px-2 pt-6'>
@@ -26,14 +25,14 @@ const Home = () => {
     </div>
     {/* Right */}
     <div>
-        <div className='flex gap-[15px]'>
+        <div className='flex  lg:gap-[15px] gap-[8px]'>
     <div className="w-[24px] h-[24px] bg-[rgb(161,159,159)] rounded-full  mt-2 flex items-center justify-center">
       <MdOutlineQuestionMark className="text-white text-sm" />
     </div>
 
 {/* button */}
-<div className='bg-[#007AFF]  w-[197px] h-[38px] flex gap-1 lg:flex-nowrap flex-wrap rounded px-2 py-2'>
-    <button className='text-white text-[13px]'>
+<div className='bg-[#007AFF]  w-[210px] h-[38px] flex gap-1 lg:flex-nowrap flex-wrap rounded px-3 py-2'>
+    <button className='text-white text-[13px] font-semibold'>
       Assign Competency Level
      
     </button>
@@ -62,20 +61,126 @@ const Home = () => {
 {/* 2nd Requird Skll */}
 <div className='bg-[#F3F3F3] mt-6 rounded-[8px] px-7 pt-5 pb-20'>
     {/* Parent */}
-    <div className='flex justify-between lg:flex-nowrap flex-wrap overflow-x-auto w-full h-[200px] overflow-y-8'>
+    <div className='flex justify-between  overflow-x-auto w-full h-[200px] overflow-y-8'>
         {/* 1 */}
+        <div>
+    <div className='flex gap-2 px-12'> 
+        <h1 className='text-[16px] font-bold'>Requird skill</h1>
+        <BsArrowDownUp className='mt-1 text-[16px] font-bold' />
+    </div>
+    {/* 1 */}
+    <div className='flex gap-8 pt-3'>
+    <input type='checkbox'/><p className='text-[16px] font-semibold'>Communication Skills </p>
+    </div>
+    {/* 2 */}
+    <div className='flex gap-8 pt-2 '>
+    <input type='checkbox'/><p className='text-16px font-semibold'>Project Management </p>
+    </div>
+    {/* 3 */}
+    <div className='flex gap-8 pt-2'>
+    <input type='checkbox'/><p className='text-[16px] font-semibold'>Analytical Thinking  </p>
+    </div>
+    </div>
         
-      <RequirdSkill/>
+      {/* <RequirdSkill/> */}
     {/* 2Categorylevel */}
-    <Capatency/>
+    {/* <Capatency/> */}
+    <div>
+    <div className='flex gap-2'> 
+        <h1 className='text-[16px] font-bold '>Competency Level</h1>
+        <BsArrowDownUp className='mt-1 text-[16px] font-bold' />
+    </div>
+    {/* 1 */}
+    <div className='flex  gap-2 pt-2'>
+    <p className='text-[16px] font-semibold'>Beginner </p>
+    < Dropdown className='mt-1'/>
+    </div>
+    {/* 2 */}
+    <div className='flex  gap-2 pt-2'>
+    <p className='text-[16px] font-semibold'>Beginner </p>
+    < Dropdown className='mt-1'/>
+    </div>
+    {/* 3 */}
+    <div className='flex  gap-2 pt-2'>
+    <p className='text-[16px] font-semibold'>Beginner </p>
+    < Dropdown className='mt-1'/>
+    </div>
+    </div>
     {/* 3Category */}
-    <Category/>
+    {/* <Category/> */}
+    <div>
+    <div className='flex gap-24'> 
+        <h1 className='text-[16px] font-bold'>Category</h1>
+        <BsArrowDownUp className='mt-1 text-[16px] font-bold' />
+    </div>
+    {/* 1 */}
+    <div className='flex  gap-14 pt-2'>
+    <p className='text-[16px] font-semibold'>Technical Skills </p>
+    < Dropdown className='mt-1'/>
+    </div>
+    {/* 2 */}
+    <div className='flex  gap-24 pt-2'>
+    <p className='text-[16px] font-semibold'>Soft Skills </p>
+    < Dropdown className='mt-1'/>
+    </div>
+    {/* 3 */}
+    <div className='flex  gap-14 pt-2'>
+    <p className='text-[16px] font-semibold'>Technical Skills </p>
+    < Dropdown className='mt-1'/>
+    </div>
+    
+
+    </div>
     {/* 4Importance */}
-    <Importance/>
+    {/* <Importance/> */}
+    <div>
+    <div className='flex gap-2'> 
+        <h1 className='text-[16px] font-bold'>Importance</h1>
+        <BsArrowDownUp className='mt-1 text-[16px] font-bold' />
+    </div>
+    {/* 1 */}
+    <div className='flex  gap-2 pt-2'>
+    <p className='text-[16px] font-semibold'>Role critical </p>
+    < Dropdown className='mt-1'/>
+    </div>
+    {/* 2 */}
+    <div className='flex  gap-1 pt-2'>
+    <p className='text-[16px] font-semibold'>Nice to have </p>
+    < Dropdown className='mt-1'/>
+    </div>
+    {/* 3 */}
+    <div className='flex  gap-1 pt-2'>
+    <p className='text-[16px] font-semibold'>Nice to have </p>
+    < Dropdown className='mt-1'/>
+    </div>
+    
+    </div>
     {/* User defined Field */}
     
-    <Userdefined/>
-    
+    {/* <Userdefined/> */}
+    <div>
+    <div className=''>
+    <p className='font-bold text-[16px]'> User defined Field</p>
+    <div className='flex gap-8 pt-2'>
+        <input type='text'  className='w-[156px] h-[24px] bg-[#D9D9D9]'/>
+        <RiPencilLine className='w-[17px] h-[17px] text-[#007AFF]' />
+
+    </div>
+    {/* 2 */}
+    <div className='flex gap-8 pt-2'>
+        <input type='text'  className='w-[156px] h-[24px] bg-[#D9D9D9]'/>
+        <RiPencilLine className='w-[17px] h-[17px] text-[#007AFF]' />
+
+    </div>
+    {/* 3 */}
+    <div className='flex gap-8 pt-2'>
+        <input type='text'  className='w-[156px] h-[24px] bg-[#D9D9D9]'/>
+        <RiPencilLine className='w-[17px] h-[17px] text-[#007AFF]' />
+        
+
+    </div>
+    </div>
+    </div>
 
     </div>
     

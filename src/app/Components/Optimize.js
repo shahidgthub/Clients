@@ -13,7 +13,7 @@ const Optimize = () => {
             Optimize Your Job Description
           </h1>
         </div>
-        <p className='pt-4 text-[16px]'>
+        <p className='pt-4 text-[16px] font-semibold'>
           Refine your job ad to align with the ideal skills portfolio and leadership persona. Make precise, thoughtful improvements to attract the right candidates.
         </p>
 
@@ -22,15 +22,15 @@ const Optimize = () => {
             <h1 className='text-[20px] font-bold'>Align with:</h1>
             <div className='flex gap-2 pt-3'>
               <input type='checkbox' />
-              <p>Skills Portfolio</p>
+              <p className='text-[16px] font-semibold'>Skills Portfolio</p>
             </div>
             <div className='flex gap-2 pt-3'>
               <input type='checkbox' />
-              <p>Ideal Leadership Persona</p>
+              <p className='text-[16px] font-semibold'>Ideal Leadership Persona</p>
             </div>
             <div className='flex gap-2 pt-3 items-center'>
               <input type='checkbox' />
-              <p>Role-Specific Refinement</p>
+              <p className='text-[16px] font-semibold'>Role-Specific Refinement</p>
               <div className='text-[#007AFF]'>
                 <Alert />
               </div>
@@ -40,10 +40,10 @@ const Optimize = () => {
           {/* Right side buttons */}
           <div className='pt-6'>
             <div className='flex gap-2 flex-wrap'>
-              <button className="w-[164px] h-[47px] flex items-center justify-center rounded-[8px] text-[#007AFF] border-2">
+              <button className="w-[164px] h-[47px] flex items-center justify-center rounded-[8px] text-[#007AFF] text-[14px] font-semibold border-2">
                 Select Criteria
               </button>
-              <button className="w-[189px] h-[47px] bg-[#007AFF] flex items-center justify-center rounded-[8px] text-white">
+              <button className="w-[189px] h-[47px] bg-[#007AFF] flex items-center justify-center  text-[14px] font-semibold rounded-[8px] text-white">
                 Optimize the job ad
               </button>
             </div>
@@ -58,7 +58,7 @@ const Optimize = () => {
         {/* button */}
         <div className='flex justify-end pt-4'>
         <div className='w-[143px] h-[47px] bg-[#007AFF]  rounded-[8px] flex items-center justify-center'>
-          <button className='text-white '>Save</button>
+          <button className='text-white text-[14px] font-semibold '>Save</button>
         </div>
         </div>
       </div>
